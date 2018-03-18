@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="48.0dp"
+    android:background="@color/white"
+    android:layout_alignParentTop="true">
+
+    <com.sevenheaven.segmentcontrol.SegmentControl
+        android:id="@+id/segment_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:selectedColor="#0099CC"
+        app:normalColor="#FFFFFF"
+        app:cornerRadius="5dip"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        app:horizonGap="20dip"
+        app:texts="名企大厂|优质企业"
+        app:verticalGap="10dip"
+        app:separatorWidth="1dp"
+        android:visibility="visible"
+        />
+    <!--android:visibility="gone" 设置控件不可见且不会保存控件在布局中的空间相反invisible会保留控件在布局中的位置-->
+    <com.sevenheaven.segmentcontrol.SegmentControl
+        android:id="@+id/segment_control_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:selectedColor="#0099CC"
+        app:normalColor="#FFFFFF"
+        app:cornerRadius="5dip"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        app:horizonGap="20dip"
+        app:texts="我的奖金|提现资料"
+        app:verticalGap="10dip"
+        app:separatorWidth="1dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/title_mine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="我的"
+        android:textSize="18sp"
+        android:textColor="@color/theme"
+        android:visibility="gone"/>
+
+</RelativeLayout>
